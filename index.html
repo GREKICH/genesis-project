@@ -9,5 +9,22 @@
     <h1>Люблю Надю, зайку!</h1>
     <h2>SAMP UKRAINE TOP!</h2>
     <h6>Артемич и компани не обижаться! Вас тоже love</h6>
+    <script>
+        // Создаем новый элемент img
+        var img = document.createElement('img');
+
+        // Устанавливаем атрибуты изображения (src, alt, width, height и т.д.)
+        img.src = 'C:\Users\denis\Desktop\genesis-project.jpg';
+        img.alt = 'Дети Грека';
+        img.width = 1920; // Замените на желаемую ширину
+        img.height = 1080; // Замените на желаемую высоту
+
+        // Находим элемент, после которого мы хотим вставить изображение
+        var targetElement = document.getElementById('myText');
+
+        // Вставляем изображение после целевого элемента
+        targetElement.parentNode.insertBefore(img, targetElement.nextSibling);
+    </script>
+
 </body>
 </html>
